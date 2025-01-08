@@ -1,0 +1,36 @@
+#competition-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 98.5725vw;
+  max-height: 1000vh;
+  margin-top: 5vmax;
+  border-radius: 15px;
+  margin-bottom: 15vmax;
+}
+
+img {
+  max-height: 100vh;
+  width: 40vmax;
+  position: relative;
+  z-index: -1000;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+p-card {
+  max-height: 1000vh;
+  max-width: 25.5vmax;
+  min-width: 22vmax;
+}
+
+p-card img {
+  padding: 20px;
+  height: 125px;
+  width: 125px;
+  z-index: 1000;
+  margin: 0;
+}

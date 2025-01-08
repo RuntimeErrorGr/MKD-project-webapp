@@ -1,0 +1,62 @@
+<p-button
+  id="option-button"
+  (onClick)="switchSidebar()"
+  icon="pi pi-bars"
+  [rounded]="true"
+  [text]="true"
+  [raised]="true"
+  severity="success"
+></p-button>
+
+<p-toolbar id="header-toolbar">
+  <div class="p-toolbar-group-center">
+    <a href="/EcoCorp-Marketplace/#/landing-page">
+      <p-button id="home-button" label="Home" [text]="true" size="large" severity="success"></p-button>
+    </a>
+
+    <button pButton class="p-button-text p-button-plain">
+      <b><u>Fiki</u></b>
+    </button>
+  </div>
+</p-toolbar>
+
+<app-intro-page></app-intro-page>
+<app-team-page></app-team-page>
+<app-problem-solution-page></app-problem-solution-page>
+<app-competition-page></app-competition-page>
+<app-metrics-page></app-metrics-page>
+<app-cost-revenue-page></app-cost-revenue-page>
+<app-customer-discovery-page></app-customer-discovery-page>
+<app-wireframes-page></app-wireframes-page>
+<app-user-experience-page></app-user-experience-page>
+<app-analytics-validation-page></app-analytics-validation-page>
+<app-market-research-page></app-market-research-page>
+<app-mvp-page></app-mvp-page>
+
+<p-toolbar id="footer-toolbar">
+  <div class="p-toolbar-group-start">
+    <img src="./assets/Icon.png" height="30" width="30" alt="EcoCorp Icon">
+    <p>EcoCorp MarketPlace</p>
+  </div>
+  <div class="p-toolbar-group-end">
+    <p>
+      Images provided by
+      <a href="https://www.freepik.com/">Freepik</a>
+    </p>
+  </div>
+</p-toolbar>
+
+<p-sidebar [(visible)]="this.sidebar" position="left">
+  <h4>EcoCorp<br>Marketplace</h4>
+  <ng-container *ngFor="let chapter of this.sidebarReferences">
+    <p-button
+      label="{{chapter.id}}.{{chapter.name}}"
+      [rounded]="true"
+      [text]="true"
+      (onClick)="this.navigateToSection(chapter.reference)"
+      severity="success">
+    </p-button>
+    <br>
+  </ng-container>
+</p-sidebar>
+

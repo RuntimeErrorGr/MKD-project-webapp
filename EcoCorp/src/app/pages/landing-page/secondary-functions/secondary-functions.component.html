@@ -1,0 +1,32 @@
+<div id="secondary-functions-container">
+  <div class="secondary-function-container" *ngFor="let functionality of this.functionalities">
+
+    <div class="secondary-function-image" style="">
+      <svg class="secondary-function-image-background" viewBox="0 0 64.0 64.0">
+        <g>
+          <path d="M31.999999999999986,0.0 C14.326888084411614,0.0 0.0,14.326888084411614 0.0,31.999999999999986 C0.0,49.67311096191404 14.326888084411614,63.99999999999997 31.999999999999986,63.99999999999997 C49.67311096191404,63.99999999999997 63.99999999999997,49.67311096191404 63.99999999999997,31.999999999999986 C63.99999999999997,14.326888084411614 49.67311096191404,0.0 31.999999999999986,0.0 Z"
+                id="VbkqeeWaLkSF8MMI"
+                style="fill:#e3f5ff;opacity:1.0;"></path>
+        </g>
+      </svg>
+
+      <img
+        [alt]=functionality.title
+        [src]=functionality.image
+        loading="lazy"
+        style="width: 20vmin; height:20vmin; position: relative; z-index: 1000;"
+        [style.transform]= "getTransformStyle(functionality.translateX, functionality.scaleY)"
+      >
+    </div>
+
+    <div class="secondary-function-info">
+      <p class="secondary-function-title">
+        {{functionality.title}}
+      </p>
+
+      <p class="secondary-function-description" style="">
+        {{functionality.description}}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+#landing-target-market-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  width: 98vw;
+  padding: 5% 5%;
+  align-items: flex-start;
+}
+
+#targets-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  width: 55%;
+}
+
+#target-market-title {
+  color:#000000;
+  font-family:Poppins, sans-serif;
+  font-size: 6vw;
+  line-height: 5.5vw;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.image-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 5vw;
+}
+
+.title-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 15vw;
+  width: 50%;
+}
+
+#target-market-content-title {
+  font-family:Poppins, sans-serif;
+  text-align: center;
+  font-size: 2.75vw;
+  margin: 0;
+}
+
+#target-market-content-description {
+  width: 70%;
+  font-size: 1.5vw;
+  font-family:Poppins, sans-serif;
+}
+
+#target-market-graphic {
+  width:50%;
+  height:50%;
+  overflow:hidden;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  top: 105%;
+  left: 5%;
+}

@@ -1,0 +1,86 @@
+<div id="intro-container">
+  <div id="intro-content-container">
+    <div id="intro-top-content-container">
+      <img
+        loading="lazy"
+        alt="EcoCorp Icon"
+        src="./favicon.ico"
+        style="width:7vmin ;height:7vmin ; display:block;"
+      >
+
+      <p id="intro-home-button">
+        Home
+      </p>
+
+      <p id="intro-fiki-button">
+        <a
+          href="/EcoCorp-Marketplace/#/fiki"
+          rel="noopener"
+          style="font-weight:500;pointer-events:all; font-size: 2.5vmin"
+        >
+          Fiki
+        </a>
+
+        <br>
+      </p>
+    </div>
+
+    <div id="intro-bottom-content-container">
+      <p id="intro-title">
+        EcoCorp
+      </p>
+      <br>
+
+      <p id="intro-description">
+        Hub for companies to
+        <br>
+        resell disused goods
+      </p>
+
+      <br>
+
+      <div id="intro-buttons-container">
+        <button class="subscribe-button" type="button" style="background-color: deepskyblue">Shop now!</button>
+        <button class="subscribe-button" type="button" (click)="op.toggle($event)">Subscribe to newsletter</button>
+      </div>
+    </div>
+  </div>
+
+  <svg id="gradient-intro">
+    <defs>
+      <linearGradient id="horizontalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#5de0e6" stop-opacity="1"></stop>
+        <stop offset="100%" stop-color="#004aad" stop-opacity="1"></stop>
+      </linearGradient>
+    </defs>
+
+    <g>
+      <rect width="100%" height="100%" fill="url(#horizontalGradient)"></rect>
+    </g>
+  </svg>
+
+  <div id="animation-intro">
+    <img
+      loading="eager"
+      alt="First page animation"
+      src="./assets/landing-intro/animation-intro.gif"
+      style="width:100%; height:100%; transform: scale(-1, 1);">
+  </div>
+</div>
+
+<div class="card flex justify-content-center">
+  <p-overlayPanel #op>
+    <p style="font-size: 20px;font-weight: bold;padding-bottom: 40px">Subscribe to Our Newsletter</p>
+
+    <form action="https://formspree.io/f/xaygggqo" method="POST">
+      <label>
+        Email:
+        <br>
+        <input class="email-input" type="email" name="email">
+      </label>
+      <br>
+
+      <button class="send-button" type="submit">Send</button>
+    </form>
+  </p-overlayPanel>
+</div>

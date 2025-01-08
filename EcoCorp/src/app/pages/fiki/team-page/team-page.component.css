@@ -1,0 +1,29 @@
+#team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  max-width: 98.5725vw;
+  max-height: 1000vh;
+  margin-bottom: 15vmax;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#card-container p-card {
+  padding: 4.5vw;
+}
+
+#card-container p-card img {
+  min-height: 40vmin;
+  max-height: 40vmax;
+  max-width: 100vmin;
+}

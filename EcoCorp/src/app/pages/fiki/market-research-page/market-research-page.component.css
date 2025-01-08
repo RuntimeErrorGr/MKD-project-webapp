@@ -1,0 +1,67 @@
+#market-research-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  max-width: 98.5725vw;
+  margin-top: 5vmax;
+  max-height: 1000vh;
+  margin-bottom: 15vmax;
+}
+
+p-tabView {
+  width: 90%;
+}
+
+.market-research-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  max-height: fit-content;
+  margin: 5vmax 0;
+  align-items: center;
+
+  & > p {
+    text-align: center;
+    font-size: 3.5vmin;
+  }
+}
+
+
+#competitor-observation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 30vmax;
+  align-items: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  max-width: 75vw;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  font-size: 1.25vmax;
+}
+
+.imp-text {
+  font-size: 23px;
+}
+
+li {
+  font-size: 1.25vmax;
+}
+
+p-fieldset {
+  margin-top: 40vmin;
+  max-width: 75vw;
+}

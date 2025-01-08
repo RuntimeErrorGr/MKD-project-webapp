@@ -1,0 +1,76 @@
+#UX-container {
+  position: relative;
+  max-height: 1000vh;
+  max-width: 98.5725vw;
+  margin: 5vmax 0 15vmax 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#UX-interviews {
+  width: 90vw;
+  height: 13vmax;
+  border: 0;
+  margin-bottom: 3vmax;
+}
+
+#personaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 95vw;
+  flex-wrap: wrap;
+  margin-bottom: 10vmax;
+  max-height: 1000vh;
+  align-items: stretch;
+
+  & p-card {
+    margin-top: 20px;
+    max-width: 25vmax;
+    padding: 0;
+  }
+}
+
+.personaInnerContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+p-panel {
+  margin-bottom: 10vmax;
+}
+
+#userStoryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 10vmax;
+
+  & p-card {
+    width: 30vmax;
+    margin: 2vmax;
+
+    & > div {
+      height: 100%;
+    }
+  }
+}
+
+#userFlowContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5vmax;
+  margin-bottom: 10vmax;
+}
+
+ul {
+  padding-inline-end: 20px;
+}

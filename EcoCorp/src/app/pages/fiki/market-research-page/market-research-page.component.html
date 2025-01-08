@@ -1,0 +1,167 @@
+<h1>Market Research</h1>
+
+<div id="market-research-container">
+  <p-tabView>
+    <p-tabPanel header="Target Market">
+      <div class = 'market-research-tab'>
+        <h4> Small and middle sized businesses (SMBs) ~ 866.323 companies</h4>
+
+        <p>
+          Retail and E-commerce<br>
+          Food and Beverage<br>
+          Professional Services (Consulting, Legal, Accounting)<br>
+          Health and Wellness (Fitness, Healthcare, Wellness Centers)<br>
+          Technology and Software<br>
+          Manufacturing and Production<br>
+          Hospitality (Restaurants, Hotels, Tourism)<br>
+          Creative Industries (Design, Marketing, Media)<br>
+        </p>
+
+        <h4> Enterprises and corporations ~ 642.344 companies</h4>
+
+        <p>
+          Information Technology (IT) and Software<br>
+          Manufacturing and Heavy Industry<br>
+          Financial Services and Banking<br>
+          Healthcare and Pharmaceuticals<br>
+          Energy and Utilities<br>
+          Automotive and Aerospace<br>
+          Telecommunications<br>
+          Retail and Chain Businesses<br>
+        </p>
+
+        <h4> Eco-sustainable businesses ~ 32.117 companies </h4>
+
+        <p>
+          Renewable Energy Companies<br>
+          Green Building and Construction<br>
+          Sustainable Agriculture and Farming<br>
+          Eco-Friendly Product Manufacturers<br>
+          Sustainable Fashion and Apparel<br>
+          Recycling and Waste Management<br>
+          Carbon Offsetting and Environmental Consulting<br>
+        </p>
+
+
+        <h4> Ecological organizations ~ 48.586 organizations </h4>
+
+        <p>
+          Environmental Non-profits<br>
+          Conservation Organizations<br>
+          Wildlife Protection Groups<br>
+          Climate Change Advocacy<br>
+          Sustainable Development NGOs<br>
+          Environmental Research Institutes<br>
+          Clean Energy Advocacy Groups<br>
+        </p>
+
+
+        <h4> Non-profit organizations ~ 102.376 organizations </h4>
+
+        <p>
+          Social Services and Welfare Organizations<br>
+          Education and Research Non-profits<br>
+          Healthcare and Medical NGOs<br>
+          Arts and Culture Organizations<br>
+          Human Rights and Advocacy Groups<br>
+          Environmental Non-profits<br>
+          Community Development Organizations<br>
+        </p>
+
+
+        <h4> Facility Management Companies (modernize / relocate companies) </h4>
+
+        <p>
+          Commercial Real Estate Management<br>
+          Building and Property Maintenance<br>
+          Facility Services for Corporations<br>
+          Hospitality and Hotel Management<br>
+          Healthcare Facility Management<br>
+          Educational Institutions Facility Services<br>
+          Government Facility Management<br>
+          Data Center Management<br>
+      </p>
+      </div>
+    </p-tabPanel>
+
+    <p-tabPanel header="Competition">
+      <div class="market-research-tab" *ngFor="let company of companies_data">
+
+        <img
+          *ngIf="company.img"
+          [src]=company.img
+          [alt]=company.name
+          style="height: 20vmin; max-width:100%; display: block; padding-bottom: 5vmin"
+        />
+
+        <table>
+            <tr>
+              <td> <b> Year </b> </td>
+              <td> <b> Turnover </b> </td>
+              <td> <b> Net Profit </b> </td>
+            </tr>
+
+            <tr *ngFor="let data of company.data">
+              <td>{{data.year}}</td>
+              <td>{{data.turnover}}</td>
+              <td>{{data.netProfit}}</td>
+            </tr>
+        </table>
+
+        <p>Source: {{company.source}}</p>
+
+        <p class="imp-text">Market share: {{company.marketShare}}</p>
+      </div>
+
+
+      <div id="competitor-observation-container">
+        <h5> Observații </h5>
+
+        <ul>
+          <li>
+            OLX are cifre de afaceri și profituri nete semnificativ mai mari decât Publi24 în toți anii menționați.
+          </li>
+
+          <li>
+            Ambele companii au înregistrat creșteri în cifra de afaceri și profitul net între 2020 și 2022.
+          </li>
+
+          <li>
+            Procentele de creștere pentru OLX sunt mai mari atât pentru cifra de afaceri, cât și pentru profitul net în comparație cu Publi24.
+          </li>
+        </ul>
+      </div>
+    </p-tabPanel>
+
+    <p-tabPanel header="Eco Corp Marketplace">
+      <div class="market-research-tab">
+        <table>
+          <tr>
+            <td> <b> Year </b> </td>
+            <td> <b> Turnover </b> </td>
+            <td> <b> Net Profit </b> </td>
+            <td> <b> Market Share </b> </td>
+            <td> <b> Market Value </b> </td>
+            <td> <b> Total Market Value </b> </td>
+          </tr>
+
+          <tr *ngFor="let pms_data of this.potentialMarketShare">
+            <td> {{pms_data.year}} </td>
+            <td> {{pms_data.turnover}} </td>
+            <td> {{pms_data.netProfit}} </td>
+            <td> {{pms_data.marketShare}} </td>
+            <td> {{pms_data.marketValue}} </td>
+            <td> {{pms_data.totalMarketValue}} </td>
+          </tr>
+        </table>
+      </div>
+    </p-tabPanel>
+  </p-tabView>
+
+  <p-fieldset legend="Conclusion">
+    <p class="m-0">
+      The data concludes that our company will have a solid target market and a solid market share which will add more
+      competition on the specific segment, therefore the company might become profitable in the near future.
+    </p>
+  </p-fieldset>
+</div>

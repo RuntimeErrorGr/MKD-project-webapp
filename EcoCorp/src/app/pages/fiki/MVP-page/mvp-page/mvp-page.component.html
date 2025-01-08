@@ -1,0 +1,51 @@
+<h1>MVP</h1>
+
+<div id="mvp-container">
+  <p-card>
+    <h4> MVP Overview </h4>
+    <ul>
+      <li>
+        This is a web platform for our project concept, EcoCorp Marketplace
+      </li>
+      <br>
+      <li>
+        Users are able to create their own accounts to either access our catalogue of available products or post their products
+      </li>
+      <br>
+      <li>
+        Every product is well-documented with technical details and who is the seller
+      </li>
+      <br>
+      <li>
+        If a user wants to buy 3 or more products, there will be a discount of 15% applied to the initial price of one product
+      </li>
+      <br>
+      <li>
+        <b> To access the MVP click the picture on the right</b>
+      </li>
+    </ul>
+  </p-card>
+
+  <a href="https://alina-t-872.github.io/EcoCorp-Marketplace-MVP/#/">
+    <img src="./assets/mvp/OpenImage.png" alt="solutions">
+  </a>
+</div>
+
+<h3>Validation from clients</h3>
+<div id="customer-chart">
+  <ng-container *ngFor="let chartData of customerData">
+    <div>
+      <p-chart type="doughnut" [data]="chartData.data" [options]="chartData.options"></p-chart>
+      <p>{{chartData.question}}</p>
+    </div>
+  </ng-container>
+</div>
+
+<p-fieldset legend="How did we get feedback for the  MVP?" [toggleable]="true" [collapsed]="true" >
+  <p> To get feedback for our MVP we made 2 posts on Facebook and Reddit</p>
+
+  <div id="mvp-posts-container">
+    <p-image src="./assets/posts-screenshots/Facebook_MVP.jpg" alt="Image" width="250" height="200" [preview]="true"></p-image>
+    <p-image src="./assets/posts-screenshots/Reddit_MVP.png" alt="Image" width="250" height="200" [preview]="true"></p-image>
+  </div>
+</p-fieldset>

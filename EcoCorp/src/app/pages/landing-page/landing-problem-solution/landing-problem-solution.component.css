@@ -1,0 +1,20 @@
+#problem-solution-container {
+  position: relative;
+  height: 150vmin;
+  width: 98vw;
+  background-color:#e3f5ff;
+}
+
+.problem-solution-title {
+  font-family: Anton, sans-serif;
+  font-size: 5.75vmin;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+.problem-solution-content {
+  font-size: 2.75vmin;
+  text-align:center;
+  font-weight:300;
+  font-family: Nunito, sans-serif;
+}
