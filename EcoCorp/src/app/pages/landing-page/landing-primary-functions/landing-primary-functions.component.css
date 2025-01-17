@@ -14,7 +14,7 @@
   top: -2.5%;
   width: 100%;
   height: 100%;
-  background-color: black;
+  /*background-color: black;*/
   border-radius: 40px;
 }
 
@@ -36,13 +36,12 @@
   font-weight:700;
   font-size: 4vmin;
   width: 90%;
-  color: #ffffff;
 }
 
 #main-functions-container {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 95%;
   max-height: 100%;
   align-items: center;
   z-index: 1;
@@ -60,7 +59,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 47.5%;
+  width: 30%;
   height: 100%;
 }
 
@@ -68,19 +67,31 @@
   font-family:Poppins, sans-serif;
   line-height:1.89473934em;
   text-align:center;
-  color: #ffffff;
   font-weight:700;
   font-size: 3.5vmin;
+  text-transform:uppercase;
+  margin-bottom: 0;
 }
 
 .buyer-seller-text {
   font-family:Poppins, sans-serif;
   font-size: 2vmin;
-  color: #ffffff;
 }
 
 #ending-text {
   font-style:italic;
   font-size: 3vmin;
-  color: #ffffff;
+}
+
+.title {
+  color: #1A243D;
+  font-family:Poppins, sans-serif;
+  width: 100%;
+}
+
+.short-description {
+  margin-top: 0;
+  font-size: x-large;
+  font-style: oblique;
+  margin-bottom: 10%;
 }

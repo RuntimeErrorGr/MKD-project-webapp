@@ -1,33 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 h1 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Poppins;
   font-size: 4vmax;
   font-weight: bold;
 }
 
 h2 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Poppins;
   font-size: 4.45vw;
   font-weight: bold;
 }
 
 h3 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Poppins;
   font-size: 3vmax;
 }
 
 h4 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Poppins;
   font-size: 2.5vmax;
 }
 
 h5 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Poppins;
   font-size: 2vw;
 }
 
@@ -47,4 +47,8 @@ h5 {
 
 .p-tabview-nav {
   justify-content: center;
+}
+
+body {
+  font-family: Poppins;
 }

@@ -2,19 +2,25 @@
   position: relative;
   height: 150vmin;
   width: 98vw;
-  background-color:#e3f5ff;
+  /*background-color:#e3f5ff;*/
 }
 
 .problem-solution-title {
-  font-family: Anton, sans-serif;
-  font-size: 5.75vmin;
+  font-family: Poppins;
+  font-size: 5.25vmin;
   text-align:center;
   text-transform:uppercase;
+  color: #1A243D;
+  line-height: 0.7lh;
 }
 
 .problem-solution-content {
   font-size: 2.75vmin;
   text-align:center;
   font-weight:300;
-  font-family: Nunito, sans-serif;
+  font-family: Poppins;}
+
+
+.arrow {
+  filter: invert(10%) sepia(10%) saturate(5925%) hue-rotate(192deg) brightness(93%) contrast(88%);
 }
