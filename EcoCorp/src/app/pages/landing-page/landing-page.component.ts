@@ -1,5 +1,4 @@
-import { Component} from '@angular/core';
-import { OverlayPanelModule } from 'primeng/overlaypanel';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,6 +6,6 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
   styleUrls: ['./landing-page.component.scss']
 })
 
-export class LandingPageComponent{
-  public value: string = '';
+export class LandingPageComponent {
+
 }
