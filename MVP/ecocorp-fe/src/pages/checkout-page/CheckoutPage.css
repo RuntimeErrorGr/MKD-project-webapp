@@ -1,0 +1,44 @@
+#checkoutPageContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .checkoutContainer {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contactInfoTitle {
+    padding-top: 10px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: sans-serif;
+  }
+  
+  .buy-button {
+    font-family: sans-serif;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .paymentContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    align-items: stretch;
+    padding: 25px;
+    width: 100%;
+}
+  
+.component {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 45%;
+}
