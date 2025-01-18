@@ -37,6 +37,7 @@ import { LandingPrimaryFunctionsComponent } from './pages/landing-page/landing-p
 import { MVPPageComponent } from './pages/fiki/MVP-page/mvp-page/mvp-page.component';
 import {ImageModule} from "primeng/image";
 import {PanelModule} from "primeng/panel";
+import { NavigationBarComponent } from './ui-elements/navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import {PanelModule} from "primeng/panel";
     MarketResearchPageComponent,
     LandingPrimaryFunctionsComponent,
     MVPPageComponent,
+    NavigationBarComponent,
   ],
   imports: [
     BrowserAnimationsModule,

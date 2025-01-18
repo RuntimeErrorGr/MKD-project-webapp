@@ -31,17 +31,17 @@
   flex-direction: row;
   height: 100vmin;
   width: 98vw;
-  margin-bottom: 7vh;
+  margin: 7.5vh 0;
 }
 
 
 #intro-content-container{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2% 0 7.5% 0;
-  width: 60%;
+  width: 50%;
   height: 100%;
 }
 
@@ -80,14 +80,23 @@
   margin: 0;
 }
 
-#intro-description {
-  color:#1d1c1c;
+#intro-slogan {
   font-family:Poppins, sans-serif;
-  text-align:center;
+  text-align:left;
   font-weight:600;
-  font-size: 2vmax;
-  margin-top: 0;
-  margin-bottom: 10vmin;
+  font-size: 3.5vmax;
+  margin-bottom: 3vmin;
+  padding-left: 6.2vmax;
+  color: #0d1929;
+}
+
+#intro-description {
+  color: #1a243b;
+  font-family:Poppins, sans-serif;
+  text-align:left;
+  font-weight:500;
+  font-size: 1.2vmax;
+  padding-left: 6.2vmax;
 }
 
 #intro-buttons-container {
@@ -99,18 +108,17 @@
 
 
 #gradient-intro {
-  width: 30%;
+  width: 100%;
   height: 111%;
   position:absolute;
   top: 0;
-  left: 65%;
+  left: 0;
+  z-index: -1;
 }
 
 #animation-intro {
   width: 40%;
-  height: 35vmax;
-  position: absolute;
+  height: 100%;
+  position: relative;
   z-index: 1000;
-  top: 10%;
-  left: 53%;
 }

@@ -35,5 +35,4 @@ export class FikiComponent implements AfterViewInit{
     elRef.scrollIntoView({behavior: "smooth", block: "start", inline: "center"})
     this.sidebar = false
   }
-
 }

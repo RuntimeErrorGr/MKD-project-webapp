@@ -1,4 +1,8 @@
 #landing-primary-functions-container {
+  padding-top: 7.5vh;
+}
+
+#landing-primary-functions-container-content {
   display: flex;
   flex-direction: row;
   max-height: fit-content;
