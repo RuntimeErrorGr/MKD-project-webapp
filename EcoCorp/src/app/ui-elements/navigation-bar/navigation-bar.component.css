@@ -1,0 +1,36 @@
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 1vw;
+  background-color: #0d1929;
+  height: 7.5vh;
+  width: 100%;
+  z-index: 9999;
+}
+
+#navbar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%
+}
+
+#navbar-buttons {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 4vh;
+  font-weight: 900;
+  padding: 0 1% 0.65% 1%;
+  width: 35%;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 7.5vh;
+  height: 7.5vh;
+  vertical-align: middle;
+}

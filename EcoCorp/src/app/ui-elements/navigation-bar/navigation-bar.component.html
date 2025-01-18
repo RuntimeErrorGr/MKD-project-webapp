@@ -1,0 +1,31 @@
+<!--suppress CheckImageSize -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <div id="navbar-container">
+    <a class="navbar-brand">
+      <img src="favicon.ico" alt="icon">
+    </a>
+
+    <div id="navbar-buttons">
+      <ng-container  *ngFor="let chapter of this.navbarReferences">
+        <p-button
+          label="{{chapter.name}}"
+          [rounded]="true"
+          [text]="true"
+          (onClick)="this.navigateToSection(chapter.reference)"
+        >
+        </p-button>
+        <br>
+      </ng-container>
+
+      <ng-container  *ngFor="let chapter of this.pageReferences">
+        <p-button
+          label="{{chapter.name}}"
+          (onClick)="this.navigateToPage(chapter.reference)"
+          severity="secondary"
+        >
+        </p-button>
+        <br>
+      </ng-container>
+    </div>
+  </div>
+</nav>
