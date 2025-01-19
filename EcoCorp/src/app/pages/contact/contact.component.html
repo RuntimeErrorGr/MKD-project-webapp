@@ -22,9 +22,9 @@
               <span class="contact-text-bold"><i class="pi pi-clock"></i> 09:00 - 17:00</span> la adresa
               <span class="contact-text-bold"><i class="pi pi-home"></i> Str. Calea Victoriei, nr. 155, București</span>.
             </p>
-      
+
             <p class="contact-text">Daca iti place munca noastra ne poti da un follow aici:</p>
-      
+
             <div class="social-media-icons">
               <a href="https://www.youtube.com" target="_blank" class="social-icon">
                 <i class="pi pi-youtube"></i>
@@ -43,7 +43,7 @@
 
         <div class="contact-form-container">
             <!-- Form Section: Display if form is not submitted -->
-            <form *ngIf="!formSubmitted" (ngSubmit)="onSubmit()" #contactForm="ngForm" class="contact-form">
+            <form *ngIf="!formSubmitted" (ngSubmit)="onSubmit()" class="contact-form">
               <div class="input-group">
                 <div class="input-container">
                   <i class="pi pi-user"></i>
@@ -57,7 +57,7 @@
                     autocomplete="off" />
                 </div>
               </div>
-          
+
               <div class="input-group">
                 <div class="input-container">
                   <i class="pi pi-envelope"></i>
@@ -85,7 +85,7 @@
                     autocomplete="off" />
                 </div>
               </div>
-          
+
               <div class="input-group">
                 <div class="input-container">
                   <i class="pi pi-comment"></i>
@@ -98,7 +98,7 @@
                     required></textarea>
                 </div>
               </div>
-          
+
               <div class="form-actions">
                 <button
                   pButton
@@ -115,7 +115,7 @@
               <p>Mesajul a fost trimis cu succes!</p>
               <p>În cel mai scurt timp un reprezentant al nostru te va contacta.</p>
             </div>
-        </div>                      
+        </div>
     </div>
 </div>
 <app-footer></app-footer>

@@ -18,7 +18,6 @@ export class LandingPageComponent implements AfterViewInit{
       new ReferenceObject(2, "Utilizare", document.querySelector('#landing-primary-functions-container'))
     )
 
-    // TODO: Add maybe a way to send to the bottom of the shop page for the Contact button
     this.pageReferences.push(
       new ReferenceObject(0, "Contact", "/contact"),
       new ReferenceObject(1, "Cumpără", "/shop")

@@ -29,6 +29,9 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { FooterComponent } from './ui-elements/footer/footer.component';
 import {DividerModule} from "primeng/divider";
+import { ProductComponent } from './pages/product/product.component';
+import {ContactComponent} from "./pages/contact/contact.component";
+import {ImportsModule} from "./imports";
 
 @NgModule({
   declarations: [
@@ -43,6 +46,8 @@ import {DividerModule} from "primeng/divider";
     ShopComponent,
     CheckoutComponent,
     FooterComponent,
+    ProductComponent,
+    ContactComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -63,6 +68,7 @@ import {DividerModule} from "primeng/divider";
     ImageModule,
     PanelModule,
     DividerModule,
+    ImportsModule,
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ImportsModule } from '../../imports';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +12,7 @@ export class ContactComponent {
     phone: '',
     message: ''
   };
-  
+
   formSubmitted = false;
 
   constructor() {}
