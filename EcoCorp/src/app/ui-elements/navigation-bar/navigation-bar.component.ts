@@ -12,9 +12,6 @@ export class NavigationBarComponent{
   constructor(private router: Router) {
   }
 
-  navbarReferences: ReferenceObject[] = []
-  pageReferences: ReferenceObject[] = []
-
   ngAfterViewInit(): void {
     this.navbarReferences.push(
       new ReferenceObject(0, "Impact", document.querySelector('#problem-solution-container')),
@@ -29,6 +26,10 @@ export class NavigationBarComponent{
     )
   }
 
+  @Input() navbarReferences: ReferenceObject[] = [];
+  @Input() pageReferences: ReferenceObject[] = [];
+  @Input() buttonNumber: number = 0
+  
   navigateToSection(elRef: any) {
     elRef.scrollIntoView({behavior: "smooth", block: "start", inline: "center"})
   }
