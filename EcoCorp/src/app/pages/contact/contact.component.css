@@ -223,6 +223,16 @@
   background-color: #1a243b;
 }
 
+.flex-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.expiry-date-picker .p-dropdown {
+  width: 120px;
+}
+
 img {
   width: 7.5vh;
   height: 7.5vh;
