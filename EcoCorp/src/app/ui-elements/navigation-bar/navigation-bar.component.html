@@ -5,7 +5,7 @@
       <img src="favicon.ico" alt="icon">
     </a>
 
-    <div id="navbar-buttons">
+    <div id="navbar-buttons" [style]="{'width': (7 * buttonNumber) + '%'}">
       <ng-container  *ngFor="let chapter of this.navbarReferences">
         <p-button
           label="{{chapter.name}}"

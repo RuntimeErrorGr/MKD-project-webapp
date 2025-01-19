@@ -1,0 +1,122 @@
+#shop-container {
+  width: 100%;
+  height: 350vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background: #1a243c;
+}
+
+#shop-title-container {
+  width: 100%;
+  height: 100vh;
+  background: #dfe0dc;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#shop-title-container-title,
+#shop-contact-container-title {
+  text-align: center;
+  font-weight:600;
+  font-size: 3.5vmax;
+  margin: 0;
+}
+
+#shop-title-products-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.p-card {
+  height: 30vh;
+  width: 20vw;
+}
+
+#shop-vdr-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background: #1a243c;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#shop-dvc-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background: #1a243c;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#vdr-slogan, #dvc-slogan {
+  font-family:Poppins, sans-serif;
+  text-align:left;
+  font-weight:600;
+  font-size: 3.5vmax;
+  margin-top: 0;
+  margin-bottom: 3vmin;
+  padding-left: 6.2vmax;
+  color: #dddfdb;
+}
+
+#vdr-description, #dvc-description {
+  color: #dddfdb;
+  font-family:Poppins, sans-serif;
+  text-align:left;
+  font-weight:500;
+  font-size: 1.2vmax;
+  padding-left: 6.2vmax;
+  margin-bottom: 0;
+}
+
+#shop-vdr-image-container, #shop-dvc-image-container {
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#shop-vdr-description, #shop-dvc-description {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#shop-contact-container{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background: #dddfdb;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#shop-vdr-container p-button,
+#shop-dvc-description p-button {
+  padding-top: 1vmax;
+  padding-left: 6.2vmax;
+}
+
+p-divider {
+  width: 90%;
+}
