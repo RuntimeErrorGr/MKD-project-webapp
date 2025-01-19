@@ -27,7 +27,6 @@ import {PanelModule} from "primeng/panel";
 import { NavigationBarComponent } from './ui-elements/navigation-bar/navigation-bar.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './ui-elements/footer/footer.component';
 import {DividerModule} from "primeng/divider";
 
@@ -43,7 +42,6 @@ import {DividerModule} from "primeng/divider";
     NavigationBarComponent,
     ShopComponent,
     CheckoutComponent,
-    ContactComponent,
     FooterComponent,
   ],
   imports: [
