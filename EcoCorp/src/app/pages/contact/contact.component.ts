@@ -5,10 +5,6 @@ import { ImportsModule } from '../../imports';
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css', '../../ui-elements/navigation-bar/navigation-bar.component.css'],
-  standalone: true,
-  imports: [
-    ImportsModule,
-  ]
 })
 export class ContactComponent {
   formData = {
