@@ -1,0 +1,120 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div id="navbar-container">
+      <a class="navbar-brand" routerLink="/">
+        <img src="favicon.ico" alt="icon" >
+      </a>
+      <div class="header">
+        <h1 class="title">Contactează-ne!</h1>
+      </div>
+    </div>
+</nav>
+
+<div class="contact-container">
+    <div class="contact-content-container">
+        <div class="contact-info">
+            <p class="contact-text">
+              Ne poți contacta la numărul de telefon
+              <span class="contact-text-bold"><i class="pi pi-phone"></i> +40 21 402 9100</span> sau la adresa de email
+              <span class="contact-text-bold"><i class="pi pi-envelope"></i> contact&#64;vrd.sales.com</span>.
+            </p>
+            <p class="contact-text">
+              Sau ne poți găsi de luni până vineri între orele
+              <span class="contact-text-bold"><i class="pi pi-clock"></i> 09:00 - 17:00</span> la adresa
+              <span class="contact-text-bold"><i class="pi pi-home"></i> Str. Calea Victoriei, nr. 155, București</span>.
+            </p>
+      
+            <p class="contact-text">Daca iti place munca noastra ne poti da un follow aici:</p>
+      
+            <div class="social-media-icons">
+              <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                <i class="pi pi-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/voice_recognition_device/" target="_blank" class="social-icon">
+                <i class="pi pi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="pi pi-facebook"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                <i class="pi pi-twitter"></i>
+              </a>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <!-- Form Section: Display if form is not submitted -->
+            <form *ngIf="!formSubmitted" (ngSubmit)="onSubmit()" #contactForm="ngForm" class="contact-form">
+              <div class="input-group">
+                <div class="input-container">
+                  <i class="pi pi-user"></i>
+                  <input
+                    id="name"
+                    name="name"
+                    [(ngModel)]="formData.name"
+                    type="text"
+                    placeholder="Nume"
+                    required
+                    autocomplete="off" />
+                </div>
+              </div>
+          
+              <div class="input-group">
+                <div class="input-container">
+                  <i class="pi pi-envelope"></i>
+                  <input
+                    id="email"
+                    name="email"
+                    [(ngModel)]="formData.email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                    autocomplete="off" />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-container">
+                  <i class="pi pi-phone"></i>
+                  <input
+                    id="phone"
+                    name="phone"
+                    [(ngModel)]="formData.phone"
+                    type="tel"
+                    placeholder="Telefon"
+                    required
+                    autocomplete="off" />
+                </div>
+              </div>
+          
+              <div class="input-group">
+                <div class="input-container">
+                  <i class="pi pi-comment"></i>
+                  <textarea
+                    id="message"
+                    name="message"
+                    [(ngModel)]="formData.message"
+                    placeholder="Cu ce te putem ajuta?"
+                    rows="5"
+                    required></textarea>
+                </div>
+              </div>
+          
+              <div class="form-actions">
+                <button
+                  pButton
+                  type="submit"
+                  label="Trimite"
+                  icon="pi pi-send"
+                  class="p-button-raised p-button-rounded">
+                </button>
+              </div>
+            </form>
+
+            <div *ngIf="formSubmitted" class="success-message">
+              <i class="pi pi-check-circle"></i>
+              <p>Mesajul a fost trimis cu succes!</p>
+              <p>În cel mai scurt timp un reprezentant al nostru te va contacta.</p>
+            </div>
+        </div>                      
+    </div>
+</div>
