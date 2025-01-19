@@ -15,7 +15,8 @@ export class LandingPageComponent implements AfterViewInit{
     this.navbarReferences.push(
       new ReferenceObject(0, "Impact", document.querySelector('#problem-solution-container')),
       new ReferenceObject(1, "Relevanță", document.querySelector('#landing-target-market-container')),
-      new ReferenceObject(2, "Utilizare", document.querySelector('#landing-primary-functions-container'))
+      new ReferenceObject(2, "Utilizare", document.querySelector('#landing-primary-functions-container')),
+      new ReferenceObject(3, "Avantaje", document.querySelector("#advantages-container"))
     )
 
     this.pageReferences.push(
