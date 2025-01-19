@@ -24,9 +24,9 @@ nav.navbar {
   color: white;
   font-size: 4vh;
   font-weight: 900;
-  padding: 0 1% 0.65% 1%;
+  padding-bottom: 0.65%;
   width: 35%;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 img {
