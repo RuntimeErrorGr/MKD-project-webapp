@@ -10,7 +10,7 @@ import {ProductComponent} from "./pages/product/product.component";
 // Eu te aud bine
 
 const routes: Routes = [
-  {path: 'product', component: ProductComponent},
+  {path: 'product/:id', component: ProductComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'checkout', component: CheckoutComponent},
   {path: 'shop', component: ShopComponent},
