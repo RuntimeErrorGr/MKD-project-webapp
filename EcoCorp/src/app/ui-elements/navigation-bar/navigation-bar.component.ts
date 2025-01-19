@@ -22,10 +22,10 @@ export class NavigationBarComponent implements AfterViewInit{
       new ReferenceObject(2, "Utilizare", document.querySelector('#landing-primary-functions-container'))
     )
 
-    // TODO: Andrei completeaza website-urile
+    // TODO: Add maybe a way to send to the bottom of the shop page for the Contact button
     this.pageReferences.push(
-      new ReferenceObject(0, "Contact", ""),
-      new ReferenceObject(1, "Cumpără", "")
+      new ReferenceObject(0, "Contact", "/shop"),
+      new ReferenceObject(1, "Cumpără", "/shop")
     )
   }
 

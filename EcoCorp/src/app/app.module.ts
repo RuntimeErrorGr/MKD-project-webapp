@@ -25,6 +25,8 @@ import { LandingPrimaryFunctionsComponent } from './pages/landing-page/landing-p
 import {ImageModule} from "primeng/image";
 import {PanelModule} from "primeng/panel";
 import { NavigationBarComponent } from './ui-elements/navigation-bar/navigation-bar.component';
+import { ShopComponent } from './pages/shop/shop.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { NavigationBarComponent } from './ui-elements/navigation-bar/navigation-
     LandingProblemSolutionComponent,
     LandingPrimaryFunctionsComponent,
     NavigationBarComponent,
+    ShopComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserAnimationsModule,
