@@ -4,6 +4,7 @@ import {ReferenceObject} from "../../model/ReferenceObject";
 @Component({
   selector: 'app-fiki',
   templateUrl: './fiki.component.html',
+  standalone: true,
   styleUrls: ['./fiki.component.css']
 })
 export class FikiComponent implements AfterViewInit{

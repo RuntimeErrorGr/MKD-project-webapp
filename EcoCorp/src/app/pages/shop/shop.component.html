@@ -1,1 +1,96 @@
-<p>shop works!</p>
+<app-navigation-bar
+  [pageReferences]="this.pageReferences"
+  [buttonNumber]=2
+></app-navigation-bar>
+
+<div id="shop-container">
+  <div id="shop-title-container">
+    <p id="shop-title-container-title"> Descoperă produsele noastre!</p>
+
+    <div id="shop-title-products-container">
+      <ng-container *ngFor="let containerRef  of this.containerReferences">
+          <p-card
+            [style]="{ height: '50vh', width: '20vw', overflow: 'hidden', cursor: 'pointer'}"
+            (click)="this.navigateToContainer(containerRef.reference)"
+          >
+            <ng-template pTemplate="header">
+              <img alt="Card" src="favicon.ico"/>
+            </ng-template>
+            <ng-template pTemplate="title" style="text-align: center">
+                {{containerRef.name}}
+            </ng-template>
+          </p-card>
+      </ng-container>
+    </div>
+  </div>
+
+  <div id="shop-vdr-container">
+    <div id="shop-vdr-image-container">
+      <img
+        loading="eager"
+        alt="First page animation"
+        src="./assets/landing-intro/VDR.jpg"
+        style="width:85%; height:55%; transform: scale(-1, 1);">
+    </div>
+
+    <div id="shop-vdr-description">
+      <p id="vdr-slogan">
+        Vorbește. Rezolvă ușor. Fă mai mult.
+      </p>
+      <br>
+      <p id="vdr-description">
+        Transformă-ți vocea în acțiune. Economisește timp și simplifică-ți sarcinile zilnice cu tehnologia noastră de recunoaștere vocală.
+      </p>
+      <br>
+      <p-button
+        label="Cumpărați-vă acum propriul VDR"
+        [rounded]="true"
+        severity="secondary"
+        size="large"
+      />
+    </div>
+  </div>
+
+  <p-divider/>
+
+  <div id="shop-dvc-container">
+    <div id="shop-dvc-description">
+      <p id="dvc-slogan">
+        Comunicare avansată, la o atingere distanță.
+      </p>
+      <br>
+      <p id="dvc-description">
+        Comunicare fără compromisuri: claritate digitală, răspuns rapid și fiabilitate de care te poți baza.
+      </p>
+      <br>
+      <br>
+      <p-button
+        label="Cumpărați-vă acum propriul DVC"
+        [rounded]="true"
+        severity="secondary"
+        size="large"
+      />
+    </div>
+
+    <div id="shop-dvc-image-container">
+      <img
+        loading="eager"
+        alt="First page animation"
+        src="./assets/DVC.jpg"
+        style="width:85%; height:55%">
+    </div>
+  </div>
+
+  <div id="shop-contact-container">
+    <p id="shop-contact-container-title"> Ai nevoie de ajutor?</p>
+    <p-button
+      label="Contactează-ne!"
+      [rounded]="true"
+      severity="secondary"
+      size="large"
+      (onClick)="this.navigateToPage(this.pageReferences[0].reference)"
+    />
+  </div>
+</div>
+
+<app-footer></app-footer>

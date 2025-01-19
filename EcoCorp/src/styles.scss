@@ -51,10 +51,13 @@ h5 {
 
 body {
   font-family: Poppins;
+  margin: 0;
 }
 
 #navbar-buttons .p-button-label {
     color: #dfe0dc !important;
 }
 
-
+#shop-container .p-card-title {
+  text-align: center !important;
+}
