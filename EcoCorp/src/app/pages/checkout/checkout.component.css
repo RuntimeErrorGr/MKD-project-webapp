@@ -65,7 +65,6 @@ label {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
 
 .credit-card-form h3 {
@@ -112,6 +111,7 @@ label {
 
 .address-group {
   background: #ffffff;
+  margin-top: 20px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -166,7 +166,6 @@ label {
 
 .separator {
   text-align: center;
-  margin: 30px 0;
   font-size: 0.9em;
   color: #777777;
   position: relative;
@@ -248,7 +247,6 @@ label {
 .payment-button img {
   width: 40px;
   height: 40px;
-  margin-right: 20px;
   position: absolute;
 }
 
@@ -300,7 +298,7 @@ label {
 
 .order-summary .form-actions {
   text-align: center;
-  margin-top: 180px;
+  margin-top: 237px;
 }
 
 .order-summary .form-actions button {
@@ -412,6 +410,7 @@ label {
   display: flex;
   align-items: center;
   gap: 5px;
+  justify-content: center;
 }
 
 .quantity-controls button {

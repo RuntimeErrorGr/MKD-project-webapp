@@ -39,7 +39,7 @@ export class ProductComponent implements OnInit{
       new Product(
         0,
         'Voice Device Recognition',
-        499.99,
+        954.49,
         "Experimentează confortul de ultimă generație cu dispozitivul nostru avansat de recunoaștere" +
         " vocală. Proiectat pentru a-ți simplifica viața, acest dispozitiv îți permite să controlezi dispozitivele," +
         " să accesezi informații și să execuți comenzi—totul cu puterea vocii tale. Indiferent dacă controlezi" +
@@ -88,7 +88,7 @@ export class ProductComponent implements OnInit{
       new Product(
         1,
         'Digital Voice Communicator',
-        499.99,
+        569.49,
         "Îmbunătățește-ți experiența de comunicare cu Digital Voice Communicator, un dispozitiv puternic" +
         " proiectat pentru interacțiuni fluide în orice mediu. Conceput pentru a se integra cu sisteme de recunoaștere" +
         " vocală și nu numai, este partenerul perfect pentru comunicare hands-free și controlul dispozitivelor" +
@@ -144,9 +144,9 @@ export class ProductComponent implements OnInit{
     );
 
     this.quantity = [
-      {name: 1},
-      {name: 2},
-      {name: 3},
+      {name: 1,value: 1},
+      {name: 2,value: 2},
+      {name: 3,value: 3},
     ]
   }
 

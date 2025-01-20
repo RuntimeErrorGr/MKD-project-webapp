@@ -31,16 +31,16 @@
       > ...mai multe detalii</button>
     </div>
 
-    <p id="price-paragraph">{{this.products[productId].price}}$</p>
+    <p id="price-paragraph">{{this.products[productId].price}} RON</p>
 
     <div id="product-cart-container">
-      <p-dropdown
-        [options]="this.quantity"
+      <p-inputNumber
         [(ngModel)]="selectedQuantity"
-        optionLabel="name"
-        placeholder="1"
-      >
-      </p-dropdown>
+        [showButtons]="true"
+        decrementButtonClass="p-button-secondary"
+        incrementButtonClass="p-button-secondary"
+        [step]="1"
+      />
 
       <p-button
         label="Adaugă în coș"
