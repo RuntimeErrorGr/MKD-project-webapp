@@ -619,3 +619,14 @@ i.pi-calendar {
     margin-top: 20px;
   }
 }
+
+#secondCardContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+#secondCardContainer label {
+  margin: 0;
+}

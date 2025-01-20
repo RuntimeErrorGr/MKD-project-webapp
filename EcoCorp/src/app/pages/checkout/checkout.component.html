@@ -32,50 +32,22 @@
           <div class="credit-card-form compact-card-form">
             <h3>Detalii card</h3>
             <div class="form-group">
-              <label for="cardNumber">Număr card</label>
+              <label for="cardNumber" >Număr card</label>
               <input type="text" id="cardNumber" class="input-field compact-input" placeholder="1234 5678 9012 3456" />
             </div>
-            <div class="form-group flex-container">
-                <p-dropdown 
-                  [options]="months" 
-                  [(ngModel)]="expiryMonth" 
-                  placeholder="MM" 
-                  optionLabel="name" 
-                  name="expiryMonth">
-                </p-dropdown>
-                <p-dropdown 
-                  [options]="years" 
-                  [(ngModel)]="expiryYear" 
-                  placeholder="YY" 
-                  name="expiryYear">
-                </p-dropdown>
-
-              <!-- <div class="expiry-date-picker compact-picker">
-                <label for="cardExpiry">Expiră la</label>
-                <p-dropdown 
-                  [options]="months" 
-                  [(ngModel)]="expiryMonth" 
-                  [style]="{width: '180px', marginRight: '10px', marginBottom: '10px', height: '40px'}" 
-                  placeholder="MM" 
-                  optionLabel="name" 
-                  name="expiryMonth">
-                </p-dropdown>
-                <p-dropdown 
-                  [options]="years" 
-                  [(ngModel)]="expiryYear" 
-                  [style]="{width: '180px', marginRight: '10px', marginBottom: '10px', height: '40px'}"
-                  placeholder="YY" 
-                  name="expiryYear">
-                </p-dropdown>
-              </div> -->
-                <label for="cardCVC">CVC</label>
-                <input type="text" id="cardCVC" class="input-field compact-input" placeholder="123" />
+            <div id="secondCardContainer" class="form-group flex-container">
+              <label for="cardMonth" style="width: 25%">Expiră la:</label>
+              <input type="text" id="cardMonth" class="input-field compact-input" placeholder="MM" />
+              <label for="cardYear">/</label>
+              <input type="text" id="cardYear" class="input-field compact-input" placeholder="YY" />
+              <label for="cardCVC">CVC</label>
+              <input type="text" id="cardCVC" class="input-field compact-input" placeholder="123" />
             </div>
-          </div>          
+          </div>
 
           <div class="address-group">
             <h3>Adresă de livrare și facturare</h3>
-            
+
             <div class="form-group flex-container">
               <div class="input-container">
                 <label for="address">Stradă</label>
@@ -86,7 +58,7 @@
                 <input type="text" id="bloc" class="input-field" placeholder="Bloc 1" />
               </div>
             </div>
-          
+
             <div class="form-group flex-container">
               <div class="input-container">
                 <label for="strada">Număr</label>
@@ -105,7 +77,7 @@
                 <input type="text" id="interfon" class="input-field" placeholder="Interfon 1234" />
               </div>
             </div>
-          
+
             <div class="form-group flex-container">
               <div class="input-container">
                 <label for="city">City</label>
@@ -116,12 +88,12 @@
                 <input type="text" id="zip" class="input-field" placeholder="12345" />
               </div>
             </div>
-          </div>          
-          
+          </div>
+
         </div>
 
       </div>
-      
+
 
     <div class="right-side">
         <div class="order-summary">
@@ -177,11 +149,11 @@
                 </div>
 
                 <div class="form-actions">
-                    <button 
-                        pButton 
-                        type="submit" 
-                        class="p-button-raised p-button-rounded" 
-                        label="Plătește acum" 
+                    <button
+                        pButton
+                        type="submit"
+                        class="p-button-raised p-button-rounded"
+                        label="Plătește acum"
                         icon="pi pi-credit-card">
                     </button>
                 </div>
