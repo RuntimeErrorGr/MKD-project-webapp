@@ -80,7 +80,7 @@ export class ProductComponent implements OnInit{
               " situațiile specifice, iar funcțiile de recunoaștere inteligentă învață din interacțiuni pentru a" +
               " îmbunătăți performanțele și a oferi o experiență din ce în ce mai personalizată."
           }],
-        ['../assets/products/VDR.jpg', './assets/products/VDR-2.PNG', './assets/products/VDR-4.webp']
+        ['./assets/products/VDR.jpg', './assets/products/VDR-2.PNG', './assets/products/VDR-4.webp']
       )
     );
 
