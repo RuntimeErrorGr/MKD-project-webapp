@@ -10,11 +10,13 @@
     <div id="shop-title-products-container">
       <ng-container *ngFor="let containerRef  of this.containerReferences">
           <p-card
-            [style]="{ height: '50vh', width: '20vw', overflow: 'hidden', cursor: 'pointer'}"
+            [style]="{ height: '32.5vh', width: '20vw', overflow: 'hidden', cursor: 'pointer'}"
             (click)="this.navigateToContainer(containerRef.reference)"
           >
             <ng-template pTemplate="header">
-              <img alt="Card" src="favicon.ico"/>
+              <ng-container *ngIf="containerRef.id === 0; else DVC">
+                <img alt="Card" src="assets/products/VDR-preview.jpg" style="height: 50%"/>
+              </ng-container>
             </ng-template>
             <ng-template pTemplate="title" style="text-align: center">
                 {{containerRef.name}}
@@ -35,7 +37,7 @@
 
     <div id="shop-vdr-description">
       <p id="vdr-slogan">
-        Vorbește. Rezolvă ușor. Fă mai mult.
+        Puterea cuvintelor tale, în mâinile tehnologiei.
       </p>
       <br>
       <p id="vdr-description">
@@ -96,3 +98,7 @@
 </div>
 
 <app-footer></app-footer>
+
+<ng-template #DVC>
+    <img alt="Card" src="assets/products/DVC-preview.jpg"/>
+</ng-template>
