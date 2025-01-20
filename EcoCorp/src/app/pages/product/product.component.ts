@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "../../model/Product";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
 import {ReferenceObject} from "../../model/ReferenceObject";
 import {MessageService} from "primeng/api";
 
@@ -14,7 +14,6 @@ export class ProductComponent implements OnInit{
   constructor(
     private messageService: MessageService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
   ) {
   }
 

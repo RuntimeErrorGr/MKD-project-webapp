@@ -6,7 +6,7 @@
     </a>
 
     <div id="navbar-buttons" [style]="{'width': (7 * buttonNumber) + '%'}">
-      <ng-container  *ngFor="let chapter of this.navbarReferences">
+      <ng-container *ngFor="let chapter of this.navbarReferences">
         <p-button
           label="{{chapter.name}}"
           [rounded]="true"
