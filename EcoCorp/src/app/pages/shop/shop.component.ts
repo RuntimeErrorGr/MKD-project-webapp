@@ -20,10 +20,9 @@ export class ShopComponent implements AfterViewInit{
       new ReferenceObject(1, "Digital Voice Communicator", document.querySelector('#shop-dvc-container'))
     )
 
-    // TODO: Add maybe a way to send to the bottom of the shop page for the Contact button
     this.pageReferences.push(
       new ReferenceObject(0, "Contact", "/contact"),
-      new ReferenceObject(1, "Coș", "/checkout")
+      new ReferenceObject(1, "Comandă", "/checkout")
     )
   }
 
