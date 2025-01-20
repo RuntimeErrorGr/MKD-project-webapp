@@ -8,121 +8,185 @@
     </nav>
 
     <div class="left-side">
-      <div class="first-half">
-        <h3>Adresă de livrare și facturare</h3>
-        <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" id="address" class="p-inputText" placeholder="123 Main St" />
-        </div>
-        <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" id="city" class="p-inputText" placeholder="City" />
-        </div>
-        <div class="form-group">
-            <label for="zip">ZIP Code</label>
-            <input type="text" id="zip" class="p-inputText" placeholder="12345" />
-        </div>
 
-        <h2>Plătește rapid printr-o metodă de Express Checkout</h2>
-        <div class="express-checkout">
-          <button class="payment-button google-pay">Google Pay</button>
-          <button class="payment-button paypal">PayPal</button>
-          <button class="payment-button other">Zibra Pay</button>
-        </div>
-        <div class="separator">
-          <span><i class="pi pi-credit-card"></i>...sau continuă mai jos pentru a efectua plata cu un card de credit</span>
-        </div>
-        <form class="credit-card-form">
+        <div class="section">
+          <h2>Plătește rapid printr-o metodă Express Checkout</h2>
+          <div class="express-checkout">
+            <div class="button-container">
+              <button pButton class="payment-button google-pay">
+                <img src="./assets/google-pay-logo.png" alt="Google Pay" class="button-icon" />
+              </button>
+              <button pButton class="payment-button apple">
+                <img src="./assets/apple-logo.png" alt="Apple Pay" class="button-icon" />
+              </button>
+              <button pButton class="payment-button bitcoin">
+                <img src="./assets/bitcoin.png" alt="Bitcoin" class="button-icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="separator">
+            <span><i class="pi pi-credit-card"></i>...sau continuă în secțiunea de mai jos pentru a efectua plata cu un card de credit</span>
+          </div>
+
+          <div class="credit-card-form compact-card-form">
             <h3>Detalii card</h3>
-            <div class="form-group icon-input">
-                <label for="cardNumber">Card Number</label>
-                <i class="pi pi-credit-card"></i>
-                <input type="text" id="cardNumber" class="p-inputText" placeholder="1234 5678 9012 3456" />
+            <div class="form-group">
+              <label for="cardNumber">Număr card</label>
+              <input type="text" id="cardNumber" class="input-field compact-input" placeholder="1234 5678 9012 3456" />
             </div>
-            <div class="form-group icon-input flex-container">
-                <label for="cardExpiry">Expiry Date</label>
-                <i class="pi pi-calendar"></i>
-                <div class="expiry-date-picker">
-                  <p-dropdown 
-                    [options]="months" 
-                    [(ngModel)]="expiryMonth" 
-                    [style]="{width: '120px'}" 
-                    placeholder="Month" 
-                    optionLabel="name"
-                    name="expiryMonth">
-                  </p-dropdown>
-              
-                  <p-dropdown 
-                    [options]="years" 
-                    [(ngModel)]="expiryYear" 
-                    [style]="{width: '120px'}" 
-                    placeholder="Year" 
-                    name="expiryYear">
-                  </p-dropdown>
-                </div>
-              </div>
-                                   
-            <div class="form-group icon-input flex-container">
+            <div class="form-group flex-container">
+                <p-dropdown 
+                  [options]="months" 
+                  [(ngModel)]="expiryMonth" 
+                  placeholder="MM" 
+                  optionLabel="name" 
+                  name="expiryMonth">
+                </p-dropdown>
+                <p-dropdown 
+                  [options]="years" 
+                  [(ngModel)]="expiryYear" 
+                  placeholder="YY" 
+                  name="expiryYear">
+                </p-dropdown>
+
+              <!-- <div class="expiry-date-picker compact-picker">
+                <label for="cardExpiry">Expiră la</label>
+                <p-dropdown 
+                  [options]="months" 
+                  [(ngModel)]="expiryMonth" 
+                  [style]="{width: '180px', marginRight: '10px', marginBottom: '10px', height: '40px'}" 
+                  placeholder="MM" 
+                  optionLabel="name" 
+                  name="expiryMonth">
+                </p-dropdown>
+                <p-dropdown 
+                  [options]="years" 
+                  [(ngModel)]="expiryYear" 
+                  [style]="{width: '180px', marginRight: '10px', marginBottom: '10px', height: '40px'}"
+                  placeholder="YY" 
+                  name="expiryYear">
+                </p-dropdown>
+              </div> -->
                 <label for="cardCVC">CVC</label>
-                <i class="pi pi-lock"></i>
-                <input type="text" id="cardCVC" class="p-inputText" placeholder="123" />
+                <input type="text" id="cardCVC" class="input-field compact-input" placeholder="123" />
             </div>
+          </div>          
 
-            <button type="submit" class="submit-button">Pay Now</button>
-        </form>          
+          <div class="address-group">
+            <h3>Adresă de livrare și facturare</h3>
+            
+            <div class="form-group flex-container">
+              <div class="input-container">
+                <label for="address">Stradă</label>
+                <input type="text" id="address" class="input-field" placeholder="123 Main St" />
+              </div>
+              <div class="input-container">
+                <label for="bloc">Bloc</label>
+                <input type="text" id="bloc" class="input-field" placeholder="Bloc 1" />
+              </div>
+            </div>
+          
+            <div class="form-group flex-container">
+              <div class="input-container">
+                <label for="strada">Număr</label>
+                <input type="text" id="numar" class="input-field" placeholder="1B" />
+              </div>
+              <div class="input-container">
+                <label for="apartament">Apartament</label>
+                <input type="text" id="apartament" class="input-field" placeholder="Apartament 10" />
+              </div>
+              <div class="input-container">
+                <label for="etaj">Etaj</label>
+                <input type="text" id="etaj" class="input-field" placeholder="Etaj 3" />
+              </div>
+              <div class="input-container">
+                <label for="interfon">Interfon</label>
+                <input type="text" id="interfon" class="input-field" placeholder="Interfon 1234" />
+              </div>
+            </div>
+          
+            <div class="form-group flex-container">
+              <div class="input-container">
+                <label for="city">City</label>
+                <input type="text" id="city" class="input-field" placeholder="City" />
+              </div>
+              <div class="input-container">
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" class="input-field" placeholder="12345" />
+              </div>
+            </div>
+          </div>          
+          
+        </div>
+
       </div>
-    </div>
-  
+      
+
     <div class="right-side">
-      <div class="order-summary">
-        <h2>Sumar comandă</h2>
-
-        <div class="product-list">
-            <div class="product-item">
-                <img src="product1.jpg" alt="Product 1" class="product-photo" />
-                <div class="product-details">
-                  <h4>Product Name</h4>
-                  <p>Some details about the product</p>
-                  <div class="quantity-controls">
-                    <button class="decrease-quantity">-</button>
-                    <span class="quantity">1</span>
-                    <button class="increase-quantity">+</button>
-                  </div>
+        <div class="order-summary">
+            <form class="payment-form">
+                <div class="logo-container">
+                    <h2>Sumar comandă</h2>
+                    <img src="./assets/vrd-logo-black.png" alt="VRD Logo" class="vrd-logo" />
                 </div>
-                <span class="product-price">$49.99</span>
-              </div>
-              
-              <div class="product-item">
-                <img src="product1.jpg" alt="Product 2" class="product-photo" />
-                <div class="product-details">
-                  <h4>Product Name</h4>
-                  <p>Some details about the product</p>
-                  <div class="quantity-controls">
-                    <button class="decrease-quantity">-</button>
-                    <span class="quantity">1</span>
-                    <button class="increase-quantity">+</button>
-                  </div>
-                </div>
-                <span class="product-price">$49.99</span>
-              </div>
-        </div>
-  
-        <div class="gift-card">
-          <input type="text" class="p-inputText" placeholder="Introdu un cod de card cadou" />
-          <button class="apply-button">Aplică</button>
-        </div>
-  
 
-        <div class="subtotal">
-          <p>Subtotal: <span>$79.98</span></p>
-          <p>Livrare: <span>Free</span></p>
-          <p class="disclaimer">* Livrarea este gratis pentru comenzi mai mari de $50.</p>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="./assets/products/VDR-2.PNG" alt="Voice Recognition Device" class="product-photo" />
+                        <div class="product-details">
+                            <h4>Voice Recognition Device</h4>
+                            <p>Some details about the product</p>
+                            <div class="quantity-controls">
+                                <button class="decrease-quantity">-</button>
+                                <span class="quantity">1</span>
+                                <button class="increase-quantity">+</button>
+                            </div>
+                        </div>
+                        <span class="product-price">149.99 RON</span>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="./assets/products/DVC-3.jpg" alt="Digital Voice Communicator" class="product-photo" />
+                        <div class="product-details">
+                            <h4>Digital Voice Communicator</h4>
+                            <p>Some details about the product</p>
+                            <div class="quantity-controls">
+                                <button class="decrease-quantity">-</button>
+                                <span class="quantity">1</span>
+                                <button class="increase-quantity">+</button>
+                            </div>
+                        </div>
+                        <span class="product-price">49.99 RON</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <input type="text" class="input-field" placeholder="Introdu un cod de card cadou" />
+                    <button pButton class="apply-button">Aplică</button>
+                </div>
+
+                <div class="subtotal">
+                    <p>Subtotal: <span>199.98  RON</span></p>
+                    <p>Livrare: <span>Gratis</span></p>
+                    <p class="disclaimer">* Livrarea este gratis pentru comenzi mai mari de $50.</p>
+                </div>
+
+                <div class="total">
+                    <p>Total: <strong>199.98  RON</strong></p>
+                </div>
+
+                <div class="form-actions">
+                    <button 
+                        pButton 
+                        type="submit" 
+                        class="p-button-raised p-button-rounded" 
+                        label="Plătește acum" 
+                        icon="pi pi-credit-card">
+                    </button>
+                </div>
+            </form>
         </div>
-  
-        <div class="total">
-          <p>Total: <strong>$79.98</strong></p>
-        </div>
-      </div>
     </div>
 </div>
 <app-footer></app-footer>
