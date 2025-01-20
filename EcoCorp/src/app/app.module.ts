@@ -32,6 +32,7 @@ import {DividerModule} from "primeng/divider";
 import { ProductComponent } from './pages/product/product.component';
 import {ContactComponent} from "./pages/contact/contact.component";
 import {ImportsModule} from "./imports";
+import { LandingAdvantagesComponent } from './pages/landing-page/landing-advantages/landing-advantages.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import {ImportsModule} from "./imports";
     SecondaryFunctionsComponent,
     LandingProblemSolutionComponent,
     LandingPrimaryFunctionsComponent,
+    LandingAdvantagesComponent,
     NavigationBarComponent,
     ShopComponent,
     CheckoutComponent,
@@ -68,7 +70,7 @@ import {ImportsModule} from "./imports";
     ImageModule,
     PanelModule,
     DividerModule,
-    ImportsModule,
+    ImportsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
