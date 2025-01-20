@@ -34,7 +34,7 @@ export class CheckoutComponent implements OnInit {
 
     this.pageReferences.push(
       new ReferenceObject(0, "Magazin", "/shop"),
-      new ReferenceObject(1, "Comandă", "/checkout")
+      new ReferenceObject(1, "Contact", "/contact")
     )
   }
 
