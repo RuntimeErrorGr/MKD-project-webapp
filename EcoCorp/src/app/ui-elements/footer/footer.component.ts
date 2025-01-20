@@ -7,5 +7,11 @@ import {Router} from "@angular/router";
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+  constructor(private router: Router) {
+  }
 
+  goToProduct(productId: number) {
+    window.location.assign(`/#/product/${productId}`)
+    window.location.reload()
+  }
 }
