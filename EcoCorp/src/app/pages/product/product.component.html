@@ -1,17 +1,69 @@
+<p-toast></p-toast>
+<app-navigation-bar
+  [pageReferences]="this.pageReferences"
+  [buttonNumber]=1
+></app-navigation-bar>
+
 <div id="product-container">
-<!--  Nebunie-->
+  <p-galleria
+    [value]="this.setImagesForGalleria()"
+    [showItemNavigators]="true"
+    [showThumbnails]="false"
+    [circular]="true"
+    [transitionInterval]="3000">
+    <ng-template pTemplate="item" let-item>
+      <img
+        [src]="item.itemImageSrc"
+        [alt]="item.alt"
+        style="height: 70vh; width: 40vw; display: block"/>
+    </ng-template>
+  </p-galleria>
 
   <div id="product-details-container">
-    <div id="product-name-price-container">
+    <h5>{{this.products[productId].name}}</h5>
 
+    <div id="description-paragraph">
+      {{ this.products[productId].smallDescription }}
+
+      <button
+        id="description-button"
+        (click)="this.changeDescriptionDialogVisibility()"
+      > ...mai multe detalii</button>
     </div>
 
-    <div id="product-specs-container">
+    <p id="price-paragraph">{{this.products[productId].price}}$</p>
 
-    </div>
+    <div id="product-cart-container">
+      <p-dropdown
+        [options]="this.quantity"
+        [(ngModel)]="selectedQuantity"
+        optionLabel="name"
+        placeholder="1"
+      >
+      </p-dropdown>
 
-    <div id="product-buy-container">
-
+      <p-button
+        label="Adaugă în coș"
+        severity="secondary"
+        (onClick)="this.submit()"
+      ></p-button>
     </div>
   </div>
 </div>
+
+<app-footer></app-footer>
+
+<p-dialog
+  [modal]="true"
+  [(visible)]="this.descriptionDialogVisible"
+  [style]="{ width: '60vw', height: '70vh' }">
+  <p-tabView>
+    <ng-container *ngFor="let spec of this.products[this.productId].specs">
+      <p-tabPanel header="{{spec.header}}">
+        <p>
+          {{ spec.description }}
+        </p>
+      </p-tabPanel>
+    </ng-container>
+  </p-tabView>
+</p-dialog>
