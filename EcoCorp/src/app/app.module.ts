@@ -33,6 +33,7 @@ import { ProductComponent } from './pages/product/product.component';
 import {ContactComponent} from "./pages/contact/contact.component";
 import {ImportsModule} from "./imports";
 import { LandingAdvantagesComponent } from './pages/landing-page/landing-advantages/landing-advantages.component';
+import {ScrollToTopService} from "./services/scroll-to-top.service";
 
 @NgModule({
   declarations: [
@@ -72,7 +73,7 @@ import { LandingAdvantagesComponent } from './pages/landing-page/landing-advanta
     DividerModule,
     ImportsModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, ScrollToTopService],
   bootstrap: [AppComponent]
 })
 
