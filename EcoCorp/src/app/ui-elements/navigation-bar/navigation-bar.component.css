@@ -24,9 +24,10 @@ nav.navbar {
   color: white;
   font-size: 4vh;
   font-weight: 900;
-  padding-bottom: 1.5vh;
-  width: 35%;
+  padding-bottom: 0.65vh;
+  height: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 img {

@@ -1,11 +1,8 @@
 <div class="checkout-page">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <div id="navbar-container">
-          <a class="navbar-brand" routerLink="/">
-            <img src="favicon.ico" alt="icon">
-          </a>
-        </div>
-    </nav>
+    <app-navigation-bar
+      [pageReferences]="this.pageReferences"
+      [buttonNumber]="2"
+    ></app-navigation-bar>
 
     <div class="left-side">
 

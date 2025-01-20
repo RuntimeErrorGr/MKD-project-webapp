@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ReferenceObject} from "../../model/ReferenceObject";
 
 @Component({
   selector: 'app-checkout',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./checkout.component.css', '../../ui-elements/navigation-bar/navigation-bar.component.css']
 })
 export class CheckoutComponent implements OnInit {
+
+  pageReferences: ReferenceObject[] = []
 
   months = [
     { value: '01', name: 'January' },
@@ -28,6 +31,11 @@ export class CheckoutComponent implements OnInit {
 
   ngOnInit(): void {
     this.generateYearOptions();
+
+    this.pageReferences.push(
+      new ReferenceObject(0, "Magazin", "/shop"),
+      new ReferenceObject(1, "Comandă", "/checkout")
+    )
   }
 
   generateYearOptions(): void {

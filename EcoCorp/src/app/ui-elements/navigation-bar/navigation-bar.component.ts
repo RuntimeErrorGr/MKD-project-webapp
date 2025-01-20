@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, Input} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {ReferenceObject} from "../../model/ReferenceObject";
 import {Router} from "@angular/router";
 
