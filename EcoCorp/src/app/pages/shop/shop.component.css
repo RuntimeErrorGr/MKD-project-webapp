@@ -38,6 +38,7 @@
 .p-card {
   height: 30vh;
   width: 20vw;
+  padding: 0;
 }
 
 #shop-vdr-container {

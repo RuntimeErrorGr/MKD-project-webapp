@@ -34,4 +34,8 @@ export class ShopComponent implements AfterViewInit{
   navigateToPage(pageRef: any) {
     this.router.navigate([pageRef])
   }
+
+  navigateToPageWithParams(pageRef: any, productId: number) {
+    this.router.navigate([pageRef, productId])
+  }
 }

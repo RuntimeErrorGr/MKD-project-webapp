@@ -1,17 +1,61 @@
 <div id="product-container">
 <!--  Nebunie-->
-
+  <p-galleria
+    [value]="this.setImagesForGalleria()"
+    [showThumbnails]="true"
+    [circular]="true"
+    [autoPlay]="true"
+    [transitionInterval]="3000">
+    <ng-template pTemplate="item" let-item>
+      <img
+        [src]="item.itemImageSrc"
+        [alt]="item.alt"
+        style="height: 70vh; width: 45vw;"/>
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+      <div class="grid grid-nogutter justify-content-center">
+        <img
+          [src]="item.thumbnailImageSrc"
+          [alt]="item.alt"
+          style="height: 70px; width: 100px;"/>
+      </div>
+    </ng-template>
+  ></p-galleria>
   <div id="product-details-container">
     <div id="product-name-price-container">
-
+      <h4>{{this.products[productId].name}}</h4>
+      <h4>{{this.products[productId].price}}$</h4>
     </div>
+
+    <p-divider></p-divider>
+    <div id="product-buy-container">
+      <p-dropdown
+        [options]="this.quantity"
+        [(ngModel)]="selectedQuantity"
+        optionLabel="name"
+        placeholder="1"
+      >
+      </p-dropdown>
+
+      <p-button
+        label="Adaugă în coș"
+        severity="secondary"
+        (onClick)="this.submit()"
+      ></p-button>
+    </div>
+
+    <p-divider></p-divider>
 
     <div id="product-specs-container">
-
-    </div>
-
-    <div id="product-buy-container">
-
+      <p-accordion [activeIndex]="0">
+        <ng-container *ngFor="let spec of this.products[productId].specs">
+          <p-accordionTab  header="{{spec.header}}">
+            <p>
+              {{ spec.description }}
+            </p>
+          </p-accordionTab >
+        </ng-container>
+      </p-accordion>
     </div>
   </div>
 </div>

@@ -3,8 +3,8 @@ export class Product {
     private _id: number,
     private _name: string,
     private _price: number,
-    private _specs: {},
-    private _images: string[],
+    private _specs: any[],
+    private _images: any[],
   ) {
   }
 
@@ -20,11 +20,11 @@ export class Product {
     return this._price;
   }
 
-  get specs(): {} {
+  get specs(): any[] {
     return this._specs;
   }
 
-  get images(): string[] {
+  get images(): any[] {
     return this._images;
   }
 }
