@@ -1,8 +1,17 @@
+#gradient-primary {
+  width: 100%;
+  height: 150vmin;
+  position:absolute;
+  top: 110vh;
+  left: 0;
+  z-index: -1;
+}
+
 #problem-solution-container {
   position: relative;
   height: 150vmin;
-  width: 98vw;
-  /*background-color:#e3f5ff;*/
+  width: 100%;
+  margin-top: 10vh;
 }
 
 .problem-solution-title {

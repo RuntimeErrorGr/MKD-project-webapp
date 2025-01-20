@@ -1,8 +1,0 @@
-#option-button {
-  position: fixed;
-  z-index: 1000;
-}
-
-#home-button {
-  z-index: 10000;
-}

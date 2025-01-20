@@ -29,8 +29,8 @@
 #intro-container {
   display: flex;
   flex-direction: row;
-  height: 100vmin;
-  width: 98vw;
+  height: 92.5vh;
+  width: 100%;
   margin: 7.5vh 0;
 }
 
@@ -109,7 +109,7 @@
 
 #gradient-intro {
   width: 100%;
-  height: 111%;
+  height: 111vh;
   position:absolute;
   top: 0;
   left: 0;
